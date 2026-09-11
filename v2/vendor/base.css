@@ -1,0 +1,47 @@
+/* Shared foundation for both iterations: font faces, reset, motion gates.
+   Everything visual (colour, type scale, layout) lives in each site's own CSS. */
+
+@font-face { font-family: "Geist"; src: url("/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Geist Mono"; src: url("/fonts/GeistMono-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Instrument Serif"; src: url("/fonts/InstrumentSerif-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Instrument Serif"; src: url("/fonts/InstrumentSerif-Italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Clash Display"; src: url("/fonts/ClashDisplay-Variable.woff2") format("woff2"); font-weight: 200 700; font-display: swap; }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+img, svg, video { display: block; max-width: 100%; }
+img { height: auto; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3, h4, h5, p, figure, blockquote, dl, dd, ul, ol { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+::selection { background: var(--selection-bg, #FFD700); color: var(--selection-fg, #020526); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 100; padding: 10px 14px; background: #000; color: #fff; }
+.skip:focus { top: 12px; }
+.icon { width: 1em; height: 1em; flex: none; }
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* Content is visible without JS. Hidden start states only apply once motion.js
+   confirms it is running (html.motion-on), so a failed script never blanks the page. */
+.motion-on [data-reveal] { opacity: 0; transform: translate3d(0, 24px, 0); }
+.motion-on [data-split] { visibility: hidden; }
+.motion-on [data-split].is-split { visibility: visible; }
+
+/* Marquee: hard clip, no mask fade (no gradients anywhere). */
+[data-marquee] { overflow: hidden; }
+[data-marquee] .marquee-track { display: flex; width: max-content; animation: marquee var(--marquee-dur, 40s) linear infinite; }
+[data-marquee]:hover .marquee-track { animation-play-state: paused; }
+@keyframes marquee { to { transform: translate3d(-50%, 0, 0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  [data-marquee] .marquee-track { animation: none; }
+}

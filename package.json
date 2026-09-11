@@ -1,0 +1,14 @@
+{
+  "name": "hardik-dewra-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "./scripts/sync-shared.sh",
+    "serve:v1": "npx serve v1 -l 4173",
+    "serve:v2": "npx serve v2 -l 4174",
+    "verify": "node scripts/verify.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}
