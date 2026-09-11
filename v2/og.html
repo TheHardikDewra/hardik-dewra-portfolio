@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>OG card - iteration 2</title>
+<link rel="stylesheet" href="/vendor/tokens.css">
+<link rel="stylesheet" href="/vendor/base.css">
+<style>
+  html, body { width: 1200px; height: 630px; margin: 0; background: var(--paper); color: var(--navy); font-family: var(--f-sans); overflow: hidden; }
+  .card { width: 1200px; height: 630px; padding: 56px 72px 60px; display: grid; grid-template-columns: 1fr 300px; grid-template-rows: auto 1fr auto; gap: 0 56px; }
+  .top { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 18px; border-bottom: 1.5px solid var(--navy);
+    font: 500 15px/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted-on-paper); }
+  .top b { font: italic 400 34px/1 var(--f-serif); color: var(--navy); letter-spacing: -.01em; text-transform: none; }
+  h1 { align-self: center; margin: 0; font: 400 98px/.92 var(--f-serif); letter-spacing: -.028em; }
+  h1 em { font-style: italic; }
+  .hl { position: relative; z-index: 0; white-space: nowrap; }
+  .hl::before { content: ""; position: absolute; left: -.05em; right: -.05em; top: .42em; bottom: .02em; background: var(--gold); z-index: -1; }
+  figure { margin: 0; align-self: center; }
+  figure img { width: 300px; height: 300px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(2,5,38,.3); }
+  .foot { grid-column: 1 / -1; display: flex; justify-content: space-between; padding-top: 18px; border-top: 1px solid rgba(2,5,38,.14);
+    font: 500 16px/1.4 var(--f-mono); color: var(--muted-on-paper); }
+  .foot span:last-child { color: var(--navy); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="top"><b>Hardik Dewra</b><span>Landing page designer · Copy, Figma, Framer</span></div>
+    <h1>Your next landing page, <em>live</em> in <span class="hl">five working days.</span></h1>
+    <figure><img src="/img/hardik-640.webp" alt=""></figure>
+    <div class="foot"><span>Brief on Monday, live URL on Friday</span><span>hardik-dewra.vercel.app</span></div>
+  </div>
+</body>
+</html>

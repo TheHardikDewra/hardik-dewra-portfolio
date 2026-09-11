@@ -25,7 +25,8 @@
   function tick() {
     clocks.forEach(function (el) {
       try {
-        el.textContent = new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: '2-digit', timeZone: el.dataset.clock }).format(new Date());
+        el.textContent = new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: '2-digit', timeZone: el.dataset.clock }).format(new Date()) +
+          (el.dataset.clockSuffix || '');
       } catch (e) { /* unsupported zone: keep server text */ }
     });
   }

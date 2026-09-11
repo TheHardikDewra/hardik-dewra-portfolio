@@ -1,0 +1,31 @@
+/* Locked brand DNA for both iterations: one palette, one type system.
+   Iteration 1 runs it dark (navy ground), iteration 2 runs it light (paper ground).
+   Source: Hardik's own navy + gold system (Typefully visuals, IG carousels).
+   Haffer is the brand face; Geist / Geist Mono are the licence-safe web stand-ins. */
+:root {
+  --navy: #020526;     /* ground in dark mode, ink in light mode */
+  --navy-2: #0A0E33;   /* raised surface on navy */
+  --navy-3: #121845;   /* hover surface on navy */
+  --paper: #F2EEE2;    /* ink in dark mode, ground in light mode */
+  --paper-2: #E7E2D2;  /* raised surface on paper */
+  --paper-3: #DCD6C3;  /* hover surface on paper */
+  --gold: #FFD700;     /* the one accent. Never text on paper; plates + fills only there */
+
+  --muted-on-navy: #A4A6BD;
+  --muted-on-paper: #545873;
+  --line-on-navy: rgba(242, 238, 226, 0.12);
+  --line-on-navy-strong: rgba(242, 238, 226, 0.24);
+  --line-on-paper: rgba(2, 5, 38, 0.14);
+  --line-on-paper-strong: rgba(2, 5, 38, 0.3);
+
+  --f-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --f-serif: "Instrument Serif", ui-serif, Georgia, "Times New Roman", serif;
+  --f-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --radius: 8px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --gutter: clamp(20px, 4vw, 56px);
+  --wrap: 1280px;
+  --selection-bg: #FFD700;
+  --selection-fg: #020526;
+}

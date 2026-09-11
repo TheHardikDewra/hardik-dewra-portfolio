@@ -2,10 +2,503 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Hardik Dewra</title>
-<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#020526;color:#F2EEE2;font:500 16px/1.5 system-ui,sans-serif}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hardik Dewra - Landing page designer, Figma to Framer</title>
+<meta name="description" content="I write, design and build landing pages myself: Figma for the design, Framer for the build, live in five working days. Eight months of CRO for a DTC supplement brand and 45 Framer templates built.">
+<link rel="canonical" href="https://hardikdewra.vercel.app/">
+<meta name="theme-color" content="#020526">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hardik Dewra">
+<meta property="og:url" content="https://hardikdewra.vercel.app/">
+<meta property="og:title" content="Hardik Dewra - Landing page designer, Figma to Framer">
+<meta property="og:description" content="Copy, design and build by one person. Brief on Monday, live URL on Friday.">
+<meta property="og:image" content="https://hardikdewra.vercel.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hardik Dewra. Your next landing page, live in five working days.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@TheHardikDewra">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/InstrumentSerif-Italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/vendor/tokens.css">
+<link rel="stylesheet" href="/vendor/base.css">
+<link rel="stylesheet" href="/styles.css">
+<script>document.documentElement.classList.add('js')</script>
+<script defer src="/vendor/gsap.min.js"></script>
+<script defer src="/vendor/ScrollTrigger.min.js"></script>
+<script defer src="/vendor/SplitText.min.js"></script>
+<script defer src="/vendor/lenis.min.js"></script>
+<script defer src="/vendor/motion.js"></script>
+<script defer src="/site.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Hardik Dewra","url":"https://hardikdewra.vercel.app/","image":"https://hardikdewra.vercel.app/img/hardik-640.webp","jobTitle":"Landing page designer","worksFor":{"@type":"Organization","name":"We Design Landing Pages","url":"https://wedesignlandingpages.com"},"address":{"@type":"PostalAddress","addressLocality":"New Delhi","addressCountry":"IN"},"knowsLanguage":["en","hi","es"],"sameAs":["https://www.linkedin.com/in/hardikdewra/","https://x.com/TheHardikDewra","https://contra.com/hardikdewra","https://www.framer.com/@hardikdewra/","https://github.com/TheHardikDewra","https://hardikdewra.medium.com/","https://www.instagram.com/thehardikdewra/"]}
+</script>
 </head>
-<body><p>Hardik Dewra - portfolio shipping shortly.</p></body>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<!-- icons:start --><svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="i-list" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol><symbol id="i-arrow-right" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol><symbol id="i-arrow-up-right" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></symbol><symbol id="i-arrow-down" viewBox="0 0 256 256" fill="currentColor"><path d="M205.66,149.66l-72,72a8,8,0,0,1-11.32,0l-72-72a8,8,0,0,1,11.32-11.32L120,196.69V40a8,8,0,0,1,16,0V196.69l58.34-58.35a8,8,0,0,1,11.32,11.32Z"/></symbol><symbol id="i-check" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></symbol><symbol id="i-plus" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></symbol><symbol id="i-envelope-simple" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></symbol><symbol id="i-copy" viewBox="0 0 256 256" fill="currentColor"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"/></symbol><symbol id="i-linkedin-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></symbol><symbol id="i-x-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"/></symbol><symbol id="i-briefcase" viewBox="0 0 256 256" fill="currentColor"><path d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"/></symbol><symbol id="i-framer-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M208,104V40a8,8,0,0,0-8-8H56a8,8,0,0,0-5.31,14L107,96H56a8,8,0,0,0-8,8v64a8,8,0,0,0,2.34,5.66l72,72A8,8,0,0,0,136,240V176h64a8,8,0,0,0,5.31-14L149,112h51A8,8,0,0,0,208,104Zm-29,56H128a8,8,0,0,0-8,8v52.69l-56-56V112h61Zm13-64H131L77,48H192Z"/></symbol><symbol id="i-instagram-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol><symbol id="i-github-logo" viewBox="0 0 256 256" fill="currentColor"><path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"/></symbol><symbol id="i-book-open-text" viewBox="0 0 256 256" fill="currentColor"><path d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z"/></symbol></svg><!-- icons:end -->
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Hardik Dewra, back to top">Hardik Dewra <small>Figma → Framer</small></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <span class="clock" title="My local time"><span data-clock="Asia/Kolkata" data-clock-suffix=" in New Delhi">New Delhi, IST</span></span>
+      <a class="btn btn-primary btn-sm" href="https://cal.com/hardikdewra">Book a 20-min call</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><svg class="icon" aria-hidden="true"><use href="#i-list"/></svg><span class="label">Menu</span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-label="Menu">
+  <nav aria-label="Mobile">
+    <a class="menu-link" href="#work">Work <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+    <a class="menu-link" href="#process">Process <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+    <a class="menu-link" href="#pricing">Pricing <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+    <a class="menu-link" href="#about">About <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+    <a class="menu-link" href="#faq">FAQ <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+  </nav>
+  <div class="menu-foot">
+    <a class="btn btn-primary" href="https://cal.com/hardikdewra">Book a 20-minute call <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+    <span class="clock"><span data-clock="Asia/Kolkata" data-clock-suffix=" in New Delhi">New Delhi, IST</span></span>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-meta">
+        <p class="eyebrow">Landing page designer · Copy, Figma, Framer</p>
+        <p class="eyebrow">Based in New Delhi · Working in IST</p>
+      </div>
+      <h1 class="display" data-split data-split-load>Your next landing page, live in <span class="plate">five working days.</span></h1>
+      <div class="hero-foot">
+        <p class="lead">I'm Hardik Dewra. I write the copy, design the page in Figma and build it in Framer myself, so nothing gets lost between a writer, a designer and a developer. Brief on Monday, live URL on Friday.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://cal.com/hardikdewra">Book a 20-minute call <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          <a class="btn btn-ghost" href="#work">See the live work <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+        </div>
+      </div>
+      <div class="facts" data-reveal-stagger>
+        <div class="fact" data-reveal><b data-count="45">45</b><span>Framer templates built, each at desktop, tablet and phone</span></div>
+        <div class="fact" data-reveal><b data-count="11">11</b><span>Languages my agency site runs in, from one Framer CMS</span></div>
+        <div class="fact" data-reveal><b><span data-count="8">8</span><small>months</small></b><span>Running CRO and design for a DTC supplement brand</span></div>
+        <div class="fact" data-reveal><b data-count="14.5" data-decimals="1" data-suffix="K">14.5K</b><span>People following my work on LinkedIn</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><span class="n">01</span> / Selected work</p>
+        <div>
+          <h2 class="h2" data-split>Two clients, my own agency, and a 27-page template.</h2>
+          <p class="lead">Every screenshot here is the real page, captured this week. Click through to anything, it's all live or documented in public.</p>
+        </div>
+      </div>
+
+      <div class="features">
+        <article class="feature" data-reveal>
+          <div class="feature-media">
+            <div class="frame">
+              <div class="frame-bar"><span>contra.com / nuora-pdp-redesign</span><a href="https://contra.com/p/Fo7vE6Wo-nuora-pdp-redesign-for-higher-conversion" target="_blank" rel="noopener">Case study <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a></div>
+              <div class="frame-img"><img src="/work/nuora-pdp-1600.webp" srcset="/work/nuora-pdp-960.webp 960w, /work/nuora-pdp-1600.webp 1600w" sizes="(max-width: 960px) 92vw, 58vw" width="1600" height="1000" alt="Nuora Feminine Balance Gummies product page, redesigned by Hardik" loading="lazy" decoding="async"></div>
+            </div>
+          </div>
+          <div class="feature-meta">
+            <p class="eyebrow">Client · Oct 2025 to Jun 2026</p>
+            <h3 class="h3">Nuora: eight months of CRO and design for a DTC supplement brand</h3>
+            <p>I ran conversion and design for Nuora, a women's gut-health brand selling on Shopify: product pages, landing pages and offer tests, designed in Figma and built in Replo. Those pages have since been retired, so the case studies carry the work now.</p>
+            <dl>
+              <dt>Role</dt><dd>CRO and design</dd>
+              <dt>Stack</dt><dd>Figma, Replo, Shopify</dd>
+              <dt>Proof</dt><dd>A Contra-verified paid project and three public case studies</dd>
+            </dl>
+            <div class="actions">
+              <a class="link" href="https://contra.com/p/Fo7vE6Wo-nuora-pdp-redesign-for-higher-conversion" target="_blank" rel="noopener">PDP redesign <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="link" href="https://contra.com/p/3BBBQgPg-e-commerce-direct-response-landing-page" target="_blank" rel="noopener">Direct-response page <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="link" href="https://contra.com/p/lPPr7eFq-high-converting-landing-page-in-e-commerce-in-figma-and-replo" target="_blank" rel="noopener">Replo landing page <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature" data-reveal>
+          <div class="feature-media">
+            <div class="frame">
+              <div class="frame-bar"><span>globalacousticinterior.com</span><a href="https://globalacousticinterior.com" target="_blank" rel="noopener">Visit <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a></div>
+              <div class="frame-img"><img src="/work/global-acoustic-1600.webp" srcset="/work/global-acoustic-960.webp 960w, /work/global-acoustic-1600.webp 1600w" sizes="(max-width: 960px) 92vw, 58vw" width="1600" height="1000" alt="Global Acoustic Interior homepage" loading="lazy" decoding="async"></div>
+            </div>
+            <div class="phone"><img src="/work/global-acoustic-m-480.webp" width="480" height="1039" alt="Global Acoustic Interior on a phone" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="feature-meta">
+            <p class="eyebrow">Client · 2025</p>
+            <h3 class="h3">Global Acoustic Interior: a 12-page site, still live on their domain</h3>
+            <p>Copy, design and build for an acoustic interiors company in India. A homepage, six service pages, projects, past clients, certificates, about and contact, built in Framer and handed over.</p>
+            <dl>
+              <dt>Role</dt><dd>Copy, design and build</dd>
+              <dt>Stack</dt><dd>Figma, Framer</dd>
+              <dt>Pages</dt><dd>12, running on the client's own domain</dd>
+            </dl>
+            <div class="actions">
+              <a class="link" href="https://globalacousticinterior.com" target="_blank" rel="noopener">Visit the site <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="link" href="https://contra.com/p/Xb77XrFE-global-acoustics-interior-landing-page-and-other-sub-pages" target="_blank" rel="noopener">Case study <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature" data-reveal>
+          <div class="feature-media">
+            <div class="frame">
+              <div class="frame-bar"><span>wedesignlandingpages.com</span><a href="https://wedesignlandingpages.com" target="_blank" rel="noopener">Visit <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a></div>
+              <div class="frame-img"><img src="/work/wdlp-home-1600.webp" srcset="/work/wdlp-home-960.webp 960w, /work/wdlp-home-1600.webp 1600w" sizes="(max-width: 960px) 92vw, 58vw" width="1600" height="1000" alt="We Design Landing Pages homepage" loading="lazy" decoding="async"></div>
+            </div>
+            <div class="phone"><img src="/work/wdlp-home-m-480.webp" width="480" height="1039" alt="We Design Landing Pages on a phone" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="feature-meta">
+            <p class="eyebrow">My agency · 2024 to now</p>
+            <h3 class="h3">We Design Landing Pages: one Framer site, eleven languages</h3>
+            <p>The studio I run. I rebuilt it to serve 11 languages from a single CMS collection, with hreflang tags, site search and a language switcher I wrote as Framer code components, and checked every language down to a 390px phone.</p>
+            <dl>
+              <dt>Role</dt><dd>Everything, from copy to code components</dd>
+              <dt>Stack</dt><dd>Framer, Framer CMS, React code components</dd>
+              <dt>Base</dt><dd>Started from a Framer template, then extended</dd>
+            </dl>
+            <div class="actions">
+              <a class="link" href="https://wedesignlandingpages.com" target="_blank" rel="noopener">Visit the site <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="link" href="https://wedesignlandingpages.com/es" target="_blank" rel="noopener">The Spanish version <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature" data-reveal>
+          <div class="feature-media">
+            <div class="frame">
+              <div class="frame-bar"><span>tessera · framer template</span><a href="https://convex-elements-248204.framer.app" target="_blank" rel="noopener">Open <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a></div>
+              <div class="frame-img"><img src="/work/tessera-1600.webp" srcset="/work/tessera-960.webp 960w, /work/tessera-1600.webp 1600w" sizes="(max-width: 960px) 92vw, 58vw" width="1600" height="1000" alt="Tessera template homepage" loading="lazy" decoding="async"></div>
+            </div>
+            <div class="phone"><img src="/work/tessera-m-480.webp" width="480" height="1039" alt="Tessera on a phone" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="feature-meta">
+            <p class="eyebrow">Framer template · Sep 2026</p>
+            <h3 class="h3">Tessera: a 27-page SaaS template with a live cost calculator</h3>
+            <p>A structure study of trykintsugi.com, rebuilt in Framer as an original compliance brand. Five hover mega-menus, one layout template carrying the nav and footer across every page, and a permit-cost calculator that recomputes as you pick a state.</p>
+            <dl>
+              <dt>Pages</dt><dd>27, each at 1440, 810 and 390</dd>
+              <dt>CMS</dt><dd>12 blog posts, 64 jurisdiction guides</dd>
+              <dt>QA</dt><dd>476 links checked, none broken</dd>
+            </dl>
+            <div class="actions">
+              <a class="link" href="https://convex-elements-248204.framer.app" target="_blank" rel="noopener">Open the template <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="link" href="https://convex-elements-248204.framer.app/permit-cost-calculator" target="_blank" rel="noopener">Try the calculator <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="index">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><span class="n">02</span> / Index</p>
+        <div>
+          <h2 class="h2" data-split>Twelve more builds. Hover to preview, click to open.</h2>
+          <p class="lead">Framer templates, hand-coded studies and one side project. A structure study keeps a real site's layout and swaps in an original brand, copy and imagery.</p>
+        </div>
+      </div>
+      <div class="index">
+        <a class="row" href="https://adorable-concept-027840.framer.app" target="_blank" rel="noopener" data-preview="/work/operator-960.webp">
+          <span class="row-no">01</span>
+          <span class="row-main"><span class="row-title">Operator</span><span class="row-desc">AI phone receptionist for dental practices, in two directions. Structure study of dentai.ai.</span></span>
+          <span class="row-type">Framer template</span><span class="row-year">2026</span>
+          <svg class="row-arrow icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <img class="row-thumb" src="/work/operator-960.webp" width="960" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+        <a class="row" href="https://jazzed-channel-120285.framer.app" target="_blank" rel="noopener" data-preview="/work/osprey-960.webp">
+          <span class="row-no">02</span>
+          <span class="row-main"><span class="row-title">Osprey</span><span class="row-desc">Security testing SaaS, 9 pages with a page per product module. Structure study of getastra.com.</span></span>
+          <span class="row-type">Framer template</span><span class="row-year">2026</span>
+          <svg class="row-arrow icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <img class="row-thumb" src="/work/osprey-960.webp" width="960" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+        <a class="row" href="https://regular-hiring-471753.framer.app" target="_blank" rel="noopener" data-preview="/work/orbit-960.webp">
+          <span class="row-no">03</span>
+          <span class="row-main"><span class="row-title">Orbit</span><span class="row-desc">Analytics SaaS, 10 pages on one layout template with a CMS blog. Structure study of viral.app.</span></span>
+          <span class="row-type">Framer template</span><span class="row-year">2026</span>
+          <svg class="row-arrow icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <img class="row-thumb" src="/work/orbit-960.webp" width="960" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+        <a class="row" href="https://streamlined-designer-041944.framer.app" target="_blank" rel="noopener" data-preview="/work/harbor-960.webp">
+          <span class="row-no">04</span>
+          <span class="row-main"><span class="row-title">Harbor</span><span class="row-desc">Client-ops SaaS with a scroll-pinned product tour and 10 components. Structure study of calendly.com.</span></span>
+          <span class="row-type">Framer template</span><span class="row-year">2026</span>
+          <svg class="row-arrow icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <img class="row-thumb" src="/work/harbor-960.webp" width="960" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+        <a class="row" href="https://thehardikdewra.github.io/landing-page-lab/" target="_blank" rel="noopener" data-preview="/work/lab-hub-960.webp">
+          <span class="row-no">05</span>
+          <span class="row-main"><span class="row-title">Landing Page Lab</span><span class="row-desc">Twelve single-file landing pages across D2C and local services, from a sleep drink to a roofing company.</span></span>
+          <span class="row-type">HTML · 12 pages</span><span class="row-year">2026</span>
+          <svg class="row-arrow icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <img class="row-thumb" src="/work/lab-hub-960.webp" width="960" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+        <a class="row" href="https://wdlp-loop.vercel.app" target="_blank" rel="noopener" data-preview="/work/wdlp-loop-960.webp">
+          <span class="row-no">06</span>
+          <span class="row-main"><span class="row-title">WDLP Loop</span><span class="row-desc">A landing page for my agency that ends by zooming into a browser frame showing its own first screen.</span></span>
+          <span class="row-type">Next.js</span><span class="row-year">2026</span>
+          <svg class="row-arrow icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <img class="row-thumb" src="/work/wdlp-loop-960.webp" width="960" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+        <a class="row" href="https://ai-meetings.framer.website" target="_blank" rel="noopener" data-preview="/work/ai-meetings-960.webp">
+          <span class="row-no">07</span>
+          <span class="row-main"><span class="row-title">AI Agents Meetings</span><span class="row-desc">Landing page for an AI meeting-agent product, designed in Figma and built in Framer.</span></span>
+          <span class="row-type">Figma + Framer</span><span class="row-year">2025</span>
+          <svg class="row-arrow icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <img class="row-thumb" src="/work/ai-meetings-960.webp" width="960" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+        <a class="row" href="https://sasam-ai-v0.framer.website" target="_blank" rel="noopener" data-preview="/work/sasam-960.webp">
+          <span class="row-no">08</span>
+          <span class="row-main"><span class="row-title">Sasam AI</span><span class="row-desc">B2B landing page for a landscaping services company.</span></span>
+          <span class="row-type">Figma + Framer</span><span class="row-year">2025</span>
+          <svg class="row-arrow icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <img class="row-thumb" src="/work/sasam-960.webp" width="960" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+        <a class="row" href="https://strength.framer.website" target="_blank" rel="noopener" data-preview="/work/strength-960.webp">
+          <span class="row-no">09</span>
+          <span class="row-main"><span class="row-title">Strength</span><span class="row-desc">Gym and fitness template, sold on Lemon Squeezy.</span></span>
+          <span class="row-type">Framer template</span><span class="row-year">2025</span>
+          <svg class="row-arrow icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <img class="row-thumb" src="/work/strength-960.webp" width="960" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+        <a class="row" href="https://landing-page-recreations.vercel.app/maya-iyer" target="_blank" rel="noopener" data-preview="/work/maya-iyer-960.webp">
+          <span class="row-no">10</span>
+          <span class="row-main"><span class="row-title">Dr. Maya Iyer</span><span class="row-desc">Author and sleep-science site with one consistent generated face across every shot. Structure study of arthurbrooks.com.</span></span>
+          <span class="row-type">HTML study</span><span class="row-year">2026</span>
+          <svg class="row-arrow icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <img class="row-thumb" src="/work/maya-iyer-960.webp" width="960" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+        <a class="row" href="https://thehardikdewra.github.io/Tushar-Work/" target="_blank" rel="noopener" data-preview="/work/tushar-work-960.webp">
+          <span class="row-no">11</span>
+          <span class="row-main"><span class="row-title">PDR, six directions</span><span class="row-desc">A studio's site repaired, then redesigned five more ways, each with its own type, palette and copy.</span></span>
+          <span class="row-type">HTML study</span><span class="row-year">2026</span>
+          <svg class="row-arrow icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <img class="row-thumb" src="/work/tushar-work-960.webp" width="960" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+        <a class="row" href="https://sriyantra.vercel.app" target="_blank" rel="noopener" data-preview="/work/sriyantra-960.webp">
+          <span class="row-no">12</span>
+          <span class="row-main"><span class="row-title">Sri Yantra, solved exactly</span><span class="row-desc">Side project: the nine-triangle figure solved to exact geometry, with a 3D model you can turn.</span></span>
+          <span class="row-type">Side project</span><span class="row-year">2026</span>
+          <svg class="row-arrow icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <img class="row-thumb" src="/work/sriyantra-960.webp" width="960" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="templates">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><span class="n">03</span> / Templates</p>
+        <div>
+          <h2 class="h2" data-split>45 Framer templates from one Figma kit.</h2>
+          <p class="lead">I rebuilt a third-party 45-page Figma kit as 45 standalone Framer sites, each with its own brand name, copy and imagery, plus the tablet and phone layouts the kit never had. Twelve of them below.</p>
+        </div>
+      </div>
+      <div class="mosaic" data-reveal-stagger>
+        <a class="tile" data-reveal href="https://first-truly-319588.framer.app" target="_blank" rel="noopener"><figure><div class="tile-img"><img src="/work/sharko-fenwick-800.webp" width="800" height="500" alt="Fenwick template" loading="lazy" decoding="async"></div><figcaption><b>Fenwick</b><span>AI writing</span></figcaption></figure></a>
+        <a class="tile" data-reveal href="https://kind-tenure-763552.framer.app" target="_blank" rel="noopener"><figure><div class="tile-img"><img src="/work/sharko-marlow-800.webp" width="800" height="500" alt="Marlow template" loading="lazy" decoding="async"></div><figcaption><b>Marlow</b><span>Shared inbox</span></figcaption></figure></a>
+        <a class="tile" data-reveal href="https://rejuvenated-location-648853.framer.app" target="_blank" rel="noopener"><figure><div class="tile-img"><img src="/work/sharko-aldridge-800.webp" width="800" height="500" alt="Aldridge template" loading="lazy" decoding="async"></div><figcaption><b>Aldridge</b><span>Cloud storage</span></figcaption></figure></a>
+        <a class="tile" data-reveal href="https://readable-something-329959.framer.app" target="_blank" rel="noopener"><figure><div class="tile-img"><img src="/work/sharko-belmont-800.webp" width="800" height="500" alt="Belmont template" loading="lazy" decoding="async"></div><figcaption><b>Belmont</b><span>Coworking</span></figcaption></figure></a>
+        <a class="tile" data-reveal href="https://knowledgeable-osprey-213785.framer.app" target="_blank" rel="noopener"><figure><div class="tile-img"><img src="/work/sharko-calder-800.webp" width="800" height="500" alt="Calder template" loading="lazy" decoding="async"></div><figcaption><b>Calder</b><span>Finance app</span></figcaption></figure></a>
+        <a class="tile" data-reveal href="https://shining-types-317050.framer.app" target="_blank" rel="noopener"><figure><div class="tile-img"><img src="/work/sharko-everly-800.webp" width="800" height="500" alt="Everly template" loading="lazy" decoding="async"></div><figcaption><b>Everly</b><span>Life insurance</span></figcaption></figure></a>
+        <a class="tile" data-reveal href="https://simplest-turtle-422759.framer.app" target="_blank" rel="noopener"><figure><div class="tile-img"><img src="/work/sharko-fairwood-800.webp" width="800" height="500" alt="Fairwood template" loading="lazy" decoding="async"></div><figcaption><b>Fairwood</b><span>Mortgage</span></figcaption></figure></a>
+        <a class="tile" data-reveal href="https://obvious-exceptions-999908.framer.app" target="_blank" rel="noopener"><figure><div class="tile-img"><img src="/work/sharko-tollgate-800.webp" width="800" height="500" alt="Tollgate template" loading="lazy" decoding="async"></div><figcaption><b>Tollgate</b><span>Payments</span></figcaption></figure></a>
+        <a class="tile" data-reveal href="https://gifted-otter-237827.framer.app" target="_blank" rel="noopener"><figure><div class="tile-img"><img src="/work/sharko-larkspur-800.webp" width="800" height="500" alt="Larkspur template" loading="lazy" decoding="async"></div><figcaption><b>Larkspur</b><span>Podcast</span></figcaption></figure></a>
+        <a class="tile" data-reveal href="https://harmonious-insurance-188884.framer.app" target="_blank" rel="noopener"><figure><div class="tile-img"><img src="/work/sharko-northgate-800.webp" width="800" height="500" alt="Northgate template" loading="lazy" decoding="async"></div><figcaption><b>Northgate</b><span>Product studio</span></figcaption></figure></a>
+        <a class="tile" data-reveal href="https://golden-branding-457623.framer.app" target="_blank" rel="noopener"><figure><div class="tile-img"><img src="/work/sharko-rostrum-800.webp" width="800" height="500" alt="Rostrum template" loading="lazy" decoding="async"></div><figcaption><b>Rostrum</b><span>Webinars</span></figcaption></figure></a>
+        <a class="tile" data-reveal href="https://cute-chart-585895.framer.app" target="_blank" rel="noopener"><figure><div class="tile-img"><img src="/work/sharko-mason-800.webp" width="800" height="500" alt="Mason template" loading="lazy" decoding="async"></div><figcaption><b>Mason</b><span>Site builder</span></figcaption></figure></a>
+      </div>
+      <p class="more"><span>Every tile opens the published template.</span><span class="eyebrow">1440 · 810 · 390</span></p>
+    </div>
+  </section>
+
+  <section class="sec" id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><span class="n">04</span> / Process</p>
+        <div>
+          <h2 class="h2" data-split>Brief on Monday. Live on <span class="it">Friday.</span></h2>
+          <p class="lead">One page, one conversion goal, five working days. The copy comes first, because a good-looking page with a vague offer still won't sell.</p>
+        </div>
+      </div>
+      <ol class="steps" data-reveal-stagger>
+        <li class="step" data-reveal><span class="n">Day 1</span><h3>Kickoff and strategy</h3><p>You send the brief. I audit your current page, we agree the conversion goal and lock the scope.</p></li>
+        <li class="step" data-reveal><span class="n">Day 2</span><h3>Copy first</h3><p>Hook, offer and section-by-section copy, drafted in a shared doc before a single pixel moves.</p></li>
+        <li class="step" data-reveal><span class="n">Day 3</span><h3>Direction</h3><p>Two visual directions and one hero concept. You pick a lane and I run with it.</p></li>
+        <li class="step" data-reveal><span class="n">Day 4</span><h3>Full design</h3><p>Every section, desktop and mobile, designed in Figma. You see the whole page before it gets built.</p></li>
+        <li class="step" data-reveal><span class="n">Day 5</span><h3>Build and ship</h3><p>Built in Framer, checked across devices, analytics wired, live on your domain.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="pricing">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><span class="n">05</span> / Pricing</p>
+        <div>
+          <h2 class="h2" data-split>Flat prices, paid upfront, one person doing the work.</h2>
+          <p class="lead">You deal with me from the first call to the live URL. No account managers and no junior designers in between.</p>
+        </div>
+      </div>
+      <div class="plans">
+        <article class="plan" data-reveal>
+          <div class="plan-top"><h3 class="plan-name">Sprint</h3><p class="eyebrow">One page</p></div>
+          <p class="plan-price">$2,400<small>per landing page</small></p>
+          <p class="plan-pitch">One page, one conversion goal, live in five working days.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Copy, design and build, all by me</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Brief to live URL in five working days</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Two structured revision rounds</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>The full Figma file, handed over</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Analytics and event tracking wired</li>
+          </ul>
+          <a class="btn btn-primary" href="https://cal.com/hardikdewra">Book a sprint call <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+        </article>
+        <article class="plan plan--partner" data-reveal>
+          <div class="plan-top"><h3 class="plan-name">Partner</h3><p class="eyebrow">Month to month</p></div>
+          <p class="plan-price">$4,800<small>per month</small></p>
+          <p class="plan-pitch">A design partner on call for every launch and campaign.</p>
+          <ul>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>New pages for every campaign</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Brand refreshes and design systems</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Pitch decks and launch assets</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Direct access, 48-hour turnaround</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Cancel any month</li>
+          </ul>
+          <a class="btn btn-ghost" href="https://cal.com/hardikdewra">Talk through a partnership <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+        </article>
+      </div>
+      <div class="audit" data-reveal>
+        <p><b>Not ready for a new page?</b> <span class="muted">A 48-hour conversion audit of the one you have is $800.</span></p>
+        <a class="link" href="https://contra.com/hardikdewra/services" target="_blank" rel="noopener">See the audit on Contra <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="wrap about">
+      <figure class="photo" data-reveal>
+        <img src="/img/hardik-640.webp" srcset="/img/hardik-320.webp 320w, /img/hardik-640.webp 640w" sizes="(max-width: 900px) 340px, 440px" width="640" height="640" alt="Hardik Dewra, smiling, in a black t-shirt against a yellow wall" loading="lazy" decoding="async">
+        <figcaption><span>Hardik Dewra</span><span>New Delhi</span></figcaption>
+      </figure>
+      <div class="about-copy">
+        <p class="eyebrow"><span class="n">06</span> / About</p>
+        <h2 class="h2" data-split>Ghostwriter first. Designer since 2023.</h2>
+        <p class="lead">I spent two years ghostwriting before I designed anything. When ChatGPT arrived in late 2022, I taught myself Figma, Framer and enough code to ship, and went solo as a designer in 2023.</p>
+        <p>The writing never left. Every page I make starts as copy in a doc, and I've published 17 articles on Medium about UX and the psychology behind design decisions.</p>
+        <p>I work from New Delhi on IST, which puts me online from late afternoon onwards for US teams. I speak English and Hindi, and professional working Spanish.</p>
+        <blockquote class="pull">I read, I write, I design, but most importantly, I stay quiet, observe, and think.<cite>My Instagram bio, and still true</cite></blockquote>
+        <div class="receipts">
+          <p class="eyebrow">Things you can check</p>
+          <a class="receipt" href="https://contra.com/hardikdewra" target="_blank" rel="noopener"><span class="k">Contra</span><span>Identity verified. Expert badges for Framer, Replo, Lummi, Kajabi and MagicPath</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          <a class="receipt" href="https://www.framer.com/@hardikdewra/" target="_blank" rel="noopener"><span class="k">Framer</span><span>Listed as a Framer Expert</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          <a class="receipt" href="https://www.linkedin.com/in/hardikdewra/" target="_blank" rel="noopener"><span class="k">LinkedIn</span><span>14,528 followers</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          <a class="receipt" href="https://hardikdewra.medium.com/" target="_blank" rel="noopener"><span class="k">Medium</span><span>17 articles on UX and design psychology</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          <a class="receipt" href="https://github.com/TheHardikDewra/hardik-dewra-portfolio" target="_blank" rel="noopener"><span class="k">GitHub</span><span>The source code of this site</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+        </div>
+        <ul class="logos" aria-label="Tools I work in">
+          <li><img src="/logos/figma.svg" width="15" height="22" alt="">Figma</li>
+          <li><img src="/logos/framer_dark.svg" width="15" height="22" alt="">Framer</li>
+          <li><img src="/logos/shopify.svg" width="20" height="22" alt="">Shopify</li>
+          <li><img src="/logos/webflow.svg" width="36" height="22" alt="">Webflow</li>
+          <li><img src="/logos/claude-ai-icon.svg" width="22" height="22" alt="">Claude</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><span class="n">07</span> / FAQ</p>
+        <div>
+          <h2 class="h2" data-split>The questions people ask before they book.</h2>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">How much does a landing page cost?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+          <div class="faq-a"><div><p>A single landing page is $2,400 flat: copy, design and build, live in five working days. Ongoing work is $4,800 a month, month to month. If you only want a second pair of eyes on the page you already have, the 48-hour conversion audit is $800.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Do you use templates for client work?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+          <div class="faq-a"><div><p>No. Every client page is designed from scratch in Figma against your positioning, your offer and your audience. The speed comes from process, not from reused files. The templates on this page are products I build and sell separately.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Can you build on my current stack?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+          <div class="faq-a"><div><p>Framer and Webflow are home turf, and I build Shopify pages in Replo. I design and build the front end. I don't do backend, and I'd rather tell you that now than find out in week two.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">What if I don't like the direction?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+          <div class="faq-a"><div><p>You see two visual directions on day three and pick one before anything gets built, so nobody spends two days building the wrong thing. Every sprint also includes two structured revision rounds.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">Who is this not for?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+          <div class="faq-a"><div><p>Anyone who wants a page that just looks nice, anyone who wants design by committee, and anyone who can't get feedback back inside 48 hours.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">What time zone are you in?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+          <div class="faq-a"><div><p>IST, in New Delhi. That puts me online from late afternoon onwards for US teams. The clock in the top bar is my real local time.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false">How do we start?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+          <div class="faq-a"><div><p>Book a 20-minute call. If it's a fit, you fill in a short brand survey, payment happens upfront, and we lock the day your five days start.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <p class="eyebrow"><span class="n">08</span> / Contact</p>
+      <h2 class="h-contact" data-split>Send me the page that isn't converting.</h2>
+      <p class="lead">Book twenty minutes. Bring the page, the offer and your traffic numbers, and I'll tell you what I'd change first.</p>
+      <div class="contact-row">
+        <a class="btn btn-primary" href="https://cal.com/hardikdewra">Book a 20-minute call <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+        <a class="copy-btn" href="mailto:thehardikdewra@gmail.com" data-copy="thehardikdewra@gmail.com" title="Click to copy"><svg class="icon" aria-hidden="true"><use href="#i-envelope-simple"/></svg><span class="copy-label">thehardikdewra@gmail.com</span><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></a>
+      </div>
+      <nav class="socials" aria-label="Elsewhere">
+        <a href="https://www.linkedin.com/in/hardikdewra/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin-logo"/></svg>LinkedIn</a>
+        <a href="https://x.com/TheHardikDewra" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-x-logo"/></svg>X</a>
+        <a href="https://contra.com/hardikdewra" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg>Contra</a>
+        <a href="https://www.framer.com/@hardikdewra/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-framer-logo"/></svg>Framer</a>
+        <a href="https://www.instagram.com/thehardikdewra/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram-logo"/></svg>Instagram</a>
+        <a href="https://github.com/TheHardikDewra" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github-logo"/></svg>GitHub</a>
+        <a href="https://hardikdewra.medium.com/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-book-open-text"/></svg>Medium</a>
+      </nav>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© <span data-year>2026</span> Hardik Dewra. Designed and built by hand in New Delhi.</span>
+    <span>Set in Geist and Instrument Serif · <a href="https://github.com/TheHardikDewra/hardik-dewra-portfolio" target="_blank" rel="noopener">Source</a></span>
+  </div>
+</footer>
+
+<div class="preview" aria-hidden="true"><img src="/work/operator-960.webp" alt="" width="960" height="600"></div>
+</body>
 </html>
